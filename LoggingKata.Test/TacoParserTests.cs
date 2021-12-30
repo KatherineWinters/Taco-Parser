@@ -30,10 +30,11 @@ namespace LoggingKata.Test
             //       each representing a TacoBell location
 
             //Arrange
-
+            var tacoTest = new TacoParser();
             //Act
-
+            var actual = tacoTest.Parse(line);
             //Assert
+            Assert.Equal(expected, actual.Location.Longitude);
         }
 
 
