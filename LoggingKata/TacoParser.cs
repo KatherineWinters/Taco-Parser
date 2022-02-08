@@ -28,7 +28,6 @@ namespace LoggingKata
             var restaurant = new TacoBell(latitude, longitude, name);
 
             return restaurant;
-
         }
     }
 }
