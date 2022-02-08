@@ -21,6 +21,8 @@ namespace LoggingKata
 
             var parser = new TacoParser();
 
+            var locations = lines.Select(parser.Parse).ToArray();
+
             var allRestaurants = lines.Select(parser.Parse).ToArray();
 
             ITrackable finalRestaurant1 = null;
